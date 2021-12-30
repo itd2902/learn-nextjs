@@ -1,9 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
+  const router = useRouter()
+  const goToAbout = () => {
+    router.push('/about')
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -20,6 +26,12 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
         </p>
+
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+
+        <button onClick={goToAbout}>Go to about</button>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
