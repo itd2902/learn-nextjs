@@ -10,6 +10,7 @@ const Home: NextPage = () => {
   const goToAbout = () => {
     router.push('/about')
   }
+  console.log(123)
   return (
     <div className={styles.container}>
       <Head>

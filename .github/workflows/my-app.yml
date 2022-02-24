@@ -10,6 +10,7 @@ on:
       - 'main'
       - 'release/**'
       - '!dev/**'
+    workflows_dispath:
 jobs:
   test-github-action:
     runs-on: ubuntu-latest
