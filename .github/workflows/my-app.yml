@@ -1,0 +1,9 @@
+name: my app
+on:
+  push:
+    branches: [main]
+jobs:
+  my-app:
+    runs-on: ubuntu-latest
+    step:
+      - run: echo Hello my app
