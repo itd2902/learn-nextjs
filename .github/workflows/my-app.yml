@@ -5,6 +5,7 @@ on:
       - '!README.md'
       - '!documents/**'
       - '**.tsx'
+      - '**.yml'
     # branches: [master]
     branches:
       - 'master'
