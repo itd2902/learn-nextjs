@@ -7,7 +7,7 @@ on:
       - '**.tsx'
     # branches: [master]
     branches:
-      - 'main'
+      - 'master'
       - 'release/**'
       - '!dev/**'
     workflows_dispath:
