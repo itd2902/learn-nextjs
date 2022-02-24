@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { useRouter } from 'next/router'
-
+// import Images from '@themes'
 const Home: NextPage = () => {
   const router = useRouter()
   const goToAbout = () => {
@@ -18,6 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* <Image src={Images} width={100} height={100} /> */}
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>

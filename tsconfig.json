@@ -27,5 +27,14 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "baseUrl": "./",
+  "paths": {
+    "@shared": [
+      "./shared"
+    ],
+    "@themes": [
+      "./themes"
+    ],
+  }
 }
